@@ -1,6 +1,6 @@
-const Button = ({children}):  => {
+const Button = ({children, onClick}: {children:React.ReactNode} {onClick:React.ReactNode})  => {
     return(
-        <button>{children}</button>
+        <button type="submit" onClick={onClick}>{children}</button>
     )
 };
 export default Button;
