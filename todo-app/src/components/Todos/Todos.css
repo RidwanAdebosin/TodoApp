@@ -1,3 +1,26 @@
 .completed {
     text-decoration: line-through;
 }
+
+/* ./components/Todos/Todos.css */
+/* 
+.todos {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .todos li span {
+    margin-right: 10px;
+  }
+  
+  .todos li span.completed {
+    text-decoration: line-through;
+    color: gray;
+  } */
+  
