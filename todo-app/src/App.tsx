@@ -3,15 +3,27 @@ import Input from "./components/Input/Input";
 import Todos from "./components/Todos/Todos";
 import { useReducer } from "react";
 
-const App = () => {
+interface State {
+  todos: {text: string; completed: boolean}[];
+  inputValue: string;
+}
+
+type Action =
+| {type: 'SET_INPUT_VALUE'; payload:string}
+| { type: 'ADD_TODO' }
+| { type: 'REMOVE_TODO'; payload: number }
+| { type: 'EDIT_TODO'; payload: { index: number; newTodo: string } };
+
+
+const App: React.FC = () => {
   // Define the initial state
   const initialState = { 
-    todos: [],           // Array to hold todos
-    inputValue: ''      // Input value for adding new todos
+    todos: [],           
+    inputValue: ''      
   };
 
   // Define the reducer function to manage state changes
-  function reducer(state, action) {
+  function reducer(state:State, action: Action): State {
     switch (action.type) {
       case 'SET_INPUT_VALUE':
         // Update inputValue in state based on action payload
@@ -79,3 +91,6 @@ const App = () => {
 };
 
 export default App;
+
+
+

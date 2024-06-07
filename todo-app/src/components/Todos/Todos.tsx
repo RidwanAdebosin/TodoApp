@@ -4,7 +4,7 @@ import "./Todos.css";
 
 // Todos component to display the list of todos
 const Todos = ({ todos, removeTodo, editTodo, dispatch }) => {
-    
+
   // Function to handle toggling the completed state of a todo
   const handleCheckedTodo = (id) => {
     dispatch({ type: 'TOGGLE_TODO', payload: id });
@@ -38,6 +38,7 @@ const Todos = ({ todos, removeTodo, editTodo, dispatch }) => {
             {todo.text}
           </span>
           {/* Button to edit the todo */}
+          <span className="btn">
           <Button onClick={() => handleEditTodo(index)}>
             <FaPen />
           </Button>
@@ -45,6 +46,8 @@ const Todos = ({ todos, removeTodo, editTodo, dispatch }) => {
           <Button onClick={() => handleDeleteTodo(index)}>
             <FaTrash />
           </Button>
+
+          </span>
         </li>
       ))}
     </ul>

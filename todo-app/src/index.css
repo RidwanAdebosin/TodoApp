@@ -43,3 +43,7 @@
     box-sizing: inherit;
   }
 }
+
+body {
+  font-size: calc(0.75em + 1vmin);
+}

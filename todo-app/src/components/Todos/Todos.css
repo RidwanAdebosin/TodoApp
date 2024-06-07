@@ -1,9 +1,7 @@
-.completed {
-    text-decoration: line-through;
-}
+
 
 /* ./components/Todos/Todos.css */
-/* 
+
 .todos {
     list-style-type: none;
     padding: 0;
@@ -22,5 +20,10 @@
   .todos li span.completed {
     text-decoration: line-through;
     color: gray;
-  } */
+  }
+
+  .btn {
+    display: flex;
+    gap: 2px;
+  }
   
