@@ -1,8 +1,7 @@
-import { FaPlus } from 'react-icons/fa'; 
+import { FaPlus } from "react-icons/fa";
 import Button from "../Button/Button";
 
 const Input = ({ inputValue, setInputValue, addTodo }) => {
-
   const handleAddTodo = (e) => {
     e.preventDefault();
     if (inputValue.trim()) {

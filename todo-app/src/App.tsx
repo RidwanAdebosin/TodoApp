@@ -2,6 +2,7 @@ import Header from "./components/Header/Header";
 import Input from "./components/Input/Input";
 import Todos from "./components/Todos/Todos";
 import { useReducer } from "react";
+import "./App.css"
 
 interface State {
   todos: {text: string; completed: boolean}[];
